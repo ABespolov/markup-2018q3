@@ -22,9 +22,11 @@ const batch = require('gulp-batch');
 var settings = {
     outputStyle: 'scss',
     columns: 12,
+    offset: '0px',
     mobileFirst: false,
     container: {
-        maxWidth: '1200px'
+        maxWidth: '1200px',
+        fields: '0px'
     },
     breakPoints: {
         xlg: {
@@ -40,7 +42,7 @@ var settings = {
             width: '780px'
         },
         xs: {
-            width: '560px'
+            width: '480px'
         }
     }
 };
@@ -52,6 +54,10 @@ gulp.task('smartgrid', function() {
 });
 
 gulp.task('sass', function() {
+
+    var Comb = require('csscomb');
+    var comb = new Comb('yandex');
+    comb.processPath('assets/css');
 
     gulp.src(['app/**/*.scss'])
         .pipe(sourcemaps.init())

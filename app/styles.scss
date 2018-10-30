@@ -1,4 +1,114 @@
-@import './libraries/smart_grid/smart-grid.scss';
-b {
-    font-size: 21px;
+@import "./libraries/smart_grid/smart-grid.scss";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@include reset();
+@font-face {
+   font-family: "Myriad Pro";
+
+   src: url("fonts/MyriadPro-Bold.woff");
+}
+
+@font-face {
+   font-family: "Georgia";
+
+   src: url("fonts/Georgia-Italic.woff");
+}
+
+html {
+   font-size: 16px;
+}
+
+@media(max-width: $break_md) {
+   html {
+      font-size: 14px;
+   }
+}
+
+body {
+   max-width: $break_xlg;
+   margin: 0 auto;
+
+   font-family: Lato;
+}
+
+.h1 {
+   margin: 2rem auto;
+
+   text-align: center;
+   text-transform: uppercase;
+
+   color: #FFF;
+
+   font-family: "Myriad Pro";
+   font-size: 4.5rem;
+}
+
+.h2 {
+   margin: 2rem auto;
+
+   text-align: center;
+
+   color: #FFF;
+
+   font-family: Georgia;
+   font-size: 2rem;
+   line-height: 2.938rem;
+}
+
+.header {
+   min-height: 1000px;
+
+   background: linear-gradient(rgba(0, 0, 0, .83), rgba(0, 0, 0, .83)), url("images/header_background.jpg");
+   background-size: cover;
+   &__logo {
+      &__image {
+         width: 100%;
+         max-width: 8.125rem;
+
+         @include xs(margin,
+         2rem 0);
+      }
+   }
+   &__navigation {
+      display: flex;
+
+      border-bottom: 1px #2A2A2C solid;
+
+      align-items: center;
+      @include wrapper();
+      @include sm(padding-top,
+      1.5rem);
+      justify-content: space-between;
+   }
+   &__list {
+      padding-left: 30%;
+
+      flex: 1 1 0;
+      flex-basis: 0;
+      @include row-flex();
+      &__item {
+         display: inline-block;
+
+         padding: 2.2rem 0;
+
+         color: #FFF;
+
+         font-size: 1rem;
+         font-weight: 400;
+
+         @include sm(padding,
+         .5rem);
+      }
+      &__link {
+         text-align: right;
+         text-decoration: none;
+
+         border-bottom: 1px transparent solid;
+
+         @include size(2);
+         @include size-sm(4);
+         &:hover {
+            border-bottom: 1px #FFF solid;
+         }
+      }
+   }
 }
