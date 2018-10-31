@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#060609">
     <title>Ghost Host</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -20,29 +20,58 @@
                 </a>
             </div>
             <ul class="header__list">
-                <a class="header__list__link" href="#home">
-                    <li class="header__list__item">Home</li>
-                </a>
-                <a class="header__list__link" href="#domain">
-                    <li class="header__list__item">Domain</li>
-                </a>
-                <a class="header__list__link" href="#hosting">
-                    <li class="header__list__item">Hosting</li>
-                </a>
-                <a class="header__list__link" href="#clients">
-                    <li class="header__list__item">Clients</li>
-                </a>
-                <a class="header__list__link" href="#blog">
-                    <li class="header__list__item">Blog</li>
-                </a>
-                <a class="header__list__link" href="#support">
-                    <li class="header__list__item">Support</li>
-                </a>
+                <li class="header__list__item">Home</li>
+                <li class="header__list__item">Domain</li>
+                <li class="header__list__item">Hosting</li>
+                <li class="header__list__item">Clients</li>
+                <li class="header__list__item">Blog</li>
+                <li class="header__list__item">Support</li>
             </ul>
         </nav>
         <h1 class="h1">HELLO!</h1>
         <h2 class="h2">We love our work...<br> And We're taking it seriously...</h2>
     </header>
+    <main>
+        <section class="authorization">
+            <div class="authorization__login">
+                <div class="button">
+                    <p class="button__text">Login</p>
+                </div>
+            </div>
+            <div class="authorization__register">
+                <div class="button button__green">
+                    <p class="button__text">Register</p>
+                </div>
+            </div>
+        </section>
+        <section class="chooseDomain">
+            <h3 class="h3">Would you like to buy a new domain ?</h3>
+            <p class="chooseDomain__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+            <div class="chooseDomain__inputs">
+                <p class="chooseDomain__inputs__www">www.</p>
+                <input class="chooseDomain__inputs__domain-name" type="text" placeholder="What do you want?">
+                <select class="chooseDomain__inputs__select-zone">
+                    <option value=".com">.com</option>
+                    <option value=".net">.net</option>
+                </select>
+                <i class="fa fa-angle-down chooseDomain__inputs__select-zone__icon" aria-hidden="true"></i>
+            </div>
+            <div class="chooseDomain__prices">
+                <div class="chooseDomain__prices__item">
+                    <p class="chooseDomain__prices__item__text">.COM</p>
+                    <p class="chooseDomain__prices__item__text">1 Year</p>
+                    <p class="chooseDomain__prices__item__text">$9.00 USD</p>
+                    <p class="chooseDomain__prices__item__text">Transfer Price No</p>
+                </div>
+                <div class="chooseDomain__prices__item">
+                    <p class="chooseDomain__prices__item__text">.COM</p>
+                    <p class="chooseDomain__prices__item__text">1 Year</p>
+                    <p class="chooseDomain__prices__item__text">$9.00 USD</p>
+                    <p class="chooseDomain__prices__item__text">Transfer Price No</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 
