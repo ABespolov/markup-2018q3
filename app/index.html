@@ -13,19 +13,19 @@
 
 <body>
     <header class="header" id="home">
-        <nav class="header__navigation">
-            <div class="header__logo">
+        <nav class="navigation">
+            <div class="navigation__logo">
                 <a href="#home">
-                    <img class="header__logo__image" src="images/logo_white.png" alt="Site Logo">
+                    <img class="navigation__logo__image" src="images/logo_white.png" alt="Site Logo">
                 </a>
             </div>
-            <ul class="header__list">
-                <li class="header__list__item">Home</li>
-                <li class="header__list__item">Domain</li>
-                <li class="header__list__item">Hosting</li>
-                <li class="header__list__item">Clients</li>
-                <li class="header__list__item">Blog</li>
-                <li class="header__list__item">Support</li>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">Home</li>
+                <li class="navigation__list__item">Domain</li>
+                <li class="navigation__list__item">Hosting</li>
+                <li class="navigation__list__item">Clients</li>
+                <li class="navigation__list__item">Blog</li>
+                <li class="navigation__list__item">Support</li>
             </ul>
         </nav>
         <h1 class="h1">HELLO!</h1>
@@ -77,82 +77,276 @@
                     <div class="packages__items__package__top-line yellow"></div>
                     <div class="packages__items__package__icon">
                         <svg viewBox="0 0 36 36" class="circular-chart">
-                          <path class="circle-bg"
+                          <path class="circle yellow"
+                            stroke-dasharray="25, 100"
                             d="M18 2.0845
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831"
                           />
-                          <path class="circle yellow-icon"
-                            stroke-dasharray="50, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                          <text x="18" y="20.35" class="percentage">&#xf13d</text>
+                          <text x="18" y="20.35" class="icon yellow-icon">&#xf13d</text>
                         </svg>
                     </div>
+                    <p class="packages__items__package__name">BASIC PACKAGE</p>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__description">
+                        <div class="packages__items__package__description">
+                            <p class="packages__items__package__description__key">Disk Space (GB)</p>
+                            <p class="packages__items__package__description__value yellow">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Subdomains</p>
+                            <p class="packages__items__package__description__value yellow">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Transfer (GB)</p>
+                            <p class="packages__items__package__description__value yellow">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Data bases</p>
+                            <p class="packages__items__package__description__value yellow">1</p>
+                            <p class="packages__items__package__description__key">Dashboards</p>
+                            <p class="packages__items__package__description__value yellow">1</p>
+                            <p class="packages__items__package__description__key">Control Panel & FTP</p>
+                            <p class="packages__items__package__description__key">Free Support</p>
+                        </div>
+                    </div>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__price">
+                        <p class="packages__items__package__price__value"><span class="currency">$</span>15<span class="month">/Mo</span></p>
+                        <div class="packages__items__package__top-line yellow price-line"></div>
+                    </div>
+                    <p class="packages__items__package__name">SELECT PLAN</p>
                 </div>
                 <div class="packages__items__package">
                     <div class="packages__items__package__top-line grey"></div>
                     <div class="packages__items__package__icon">
-                        <svg viewBox="0 0 36 36" class="circular-chart orange">
-                          <path class="circle-bg"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                          <path class="circle"
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                          <path class="circle grey"
                             stroke-dasharray="50, 100"
                             d="M18 2.0845
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831"
                           />
-                          <text x="18" y="20.35" class="percentage">&#xf13d</text>
+                          <text x="18" y="20.35" class="icon grey-icon">&#xf123</text>
                         </svg>
                     </div>
+                    <p class="packages__items__package__name">NORMAL PACKAGE</p>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__description">
+                        <div class="packages__items__package__description">
+                            <p class="packages__items__package__description__key">Disk Space (GB)</p>
+                            <p class="packages__items__package__description__value grey">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Subdomains</p>
+                            <p class="packages__items__package__description__value grey">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Transfer (GB)</p>
+                            <p class="packages__items__package__description__value grey">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Data bases</p>
+                            <p class="packages__items__package__description__value grey">1</p>
+                            <p class="packages__items__package__description__key">Dashboards</p>
+                            <p class="packages__items__package__description__value grey">1</p>
+                            <p class="packages__items__package__description__key">Control Panel & FTP</p>
+                            <p class="packages__items__package__description__key">Free Support</p>
+                        </div>
+                    </div>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__price">
+                        <p class="packages__items__package__price__value"><span class="currency">$</span>30<span class="month">/Mo</span></p>
+                        <div class="packages__items__package__top-line grey price-line"></div>
+                    </div>
+                    <p class="packages__items__package__name">SELECT PLAN</p>
                 </div>
                 <div class="packages__items__package">
-                    <div class="packages__items__package__top-line yellow"></div>
+                    <div class="packages__items__package__top-line red"></div>
                     <div class="packages__items__package__icon">
-                        <svg viewBox="0 0 36 36" class="circular-chart orange">
-                          <path class="circle-bg"
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                          <path class="circle red"
+                            stroke-dasharray="75, 100"
                             d="M18 2.0845
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831"
                           />
-                          <path class="circle"
-                            stroke-dasharray="50, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                          <text x="18" y="20.35" class="percentage">&#xf13d</text>
+                          <text x="18" y="20.35" class="icon red-icon">&#xf005</text>
                         </svg>
                     </div>
+                    <p class="packages__items__package__name">BIG PACKAGE</p>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__description">
+                        <div class="packages__items__package__description">
+                            <p class="packages__items__package__description__key">Disk Space (GB)</p>
+                            <p class="packages__items__package__description__value red">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Subdomains</p>
+                            <p class="packages__items__package__description__value red">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Transfer (GB)</p>
+                            <p class="packages__items__package__description__value red">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Data bases</p>
+                            <p class="packages__items__package__description__value red">1</p>
+                            <p class="packages__items__package__description__key">Dashboards</p>
+                            <p class="packages__items__package__description__value red">1</p>
+                            <p class="packages__items__package__description__key">Control Panel & FTP</p>
+                            <p class="packages__items__package__description__key">Free Support</p>
+                        </div>
+                    </div>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__price">
+                        <p class="packages__items__package__price__value"><span class="currency">$</span>40<span class="month">/Mo</span></p>
+                        <div class="packages__items__package__top-line red price-line"></div>
+                    </div>
+                    <p class="packages__items__package__name">SELECT PLAN</p>
                 </div>
                 <div class="packages__items__package">
-                    <div class="packages__items__package__top-line yellow"></div>
+                    <div class="packages__items__package__top-line green"></div>
                     <div class="packages__items__package__icon">
-                        <svg viewBox="0 0 36 36" class="circular-chart orange">
-                          <path class="circle-bg"
+                        <svg viewBox="0 0 36 36" class="circular-chart ">
+                          <path class="circle green"
+                            stroke-dasharray="100, 100"
                             d="M18 2.0845
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831"
                           />
-                          <path class="circle"
-                            stroke-dasharray="50, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                          <text x="18" y="20.35" class="percentage">&#xf13d</text>
+                          <text x="18" y="20.35" class="icon green-icon">&#xf219</text>
                         </svg>
+                    </div>
+                    <p class="packages__items__package__name">BIGGEST PACKAGE</p>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__description">
+                        <div class="packages__items__package__description">
+                            <p class="packages__items__package__description__key">Disk Space (GB)</p>
+                            <p class="packages__items__package__description__value green">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Subdomains</p>
+                            <p class="packages__items__package__description__value green">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Transfer (GB)</p>
+                            <p class="packages__items__package__description__value green">50</p>
+                            <div class="clearfix"></div>
+                            <p class="packages__items__package__description__key">Data bases</p>
+                            <p class="packages__items__package__description__value green">1</p>
+                            <p class="packages__items__package__description__key">Dashboards</p>
+                            <p class="packages__items__package__description__value green">1</p>
+                            <p class="packages__items__package__description__key">Control Panel & FTP</p>
+                            <p class="packages__items__package__description__key">Free Support</p>
+                        </div>
+                    </div>
+                    <hr class="packages__items__package__hr">
+                    <div class="packages__items__package__price">
+                        <p class="packages__items__package__price__value"><span class="currency">$</span>70<span class="month">/Mo</span></p>
+                        <div class="packages__items__package__top-line green price-line"></div>
+                    </div>
+                    <p class="packages__items__package__name">SELECT PLAN</p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__content">
+                <hr class="about__content__hr">
+                <div class="about__content__items">
+                    <div class="about__content__items__description">
+                        <h3 class="h3 about__content__items__description__header">About Us</h3>
+                        <p class="about__content__items__description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce posuere, sapien nec poır. Uaee
+                            augsuada sed mauris in tincidunt...</p>
+                    </div>
+                    <div class="about__content__items__team">
+                        <div class="about__content__items__team__item">
+                            <img class="about__content__items__team__item__image" src="images/john_1.png" alt="John">
+                            <p class="about__content__items__team__item__name">Jonny Doe</p>
+                            <p class="about__content__items__team__item__position">Designer</p>
+                            <div class="about__content__items__team__item__social">
+                                <a target="_blank" href="facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a target="_blank" href="twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a target="_blank" href="wtf.com/"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="about__content__items__team__item">
+                            <img class="about__content__items__team__item__image" src="images/john_1.png" alt="John">
+                            <p class="about__content__items__team__item__name">Jonny Doe</p>
+                            <p class="about__content__items__team__item__position">Designer</p>
+                            <div class="about__content__items__team__item__social">
+                                <a target="_blank" href="facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a target="_blank" href="twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a target="_blank" href="wtf.com/"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="about__content__items__team__item">
+                            <img class="about__content__items__team__item__image" src="images/john_1.png" alt="John">
+                            <p class="about__content__items__team__item__name">Jonny Doe</p>
+                            <p class="about__content__items__team__item__position">Designer</p>
+                            <div class="about__content__items__team__item__social">
+                                <a target="_blank" href="facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a target="_blank" href="twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a target="_blank" href="wtf.com/"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="quotes">
+            <div class="quotes__content">
+                <i id="left_control" class="fa fa-angle-left quotes__content__left-control" aria-hidden="true"></i>
+                <i id="right_control" class="fa fa-angle-right quotes__content__right-control" aria-hidden="true"></i>
+                <p class="quotes__content__text active">“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”</p>
+                <p class="quotes__content__text">“Suspendisse tempor turpis odio, sit amet cursus leo consequat non.”</p>
+                <p class="quotes__content__text">“Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”</p>
+                <div class="quotes__content__description">
+                    <p class="quotes__content__description__name active">John Doe</p>
+                    <p class="quotes__content__description__name">Johny Doe</p>
+                    <p class="quotes__content__description__name">Johnathan Doe</p>
+                    <div class="quotes__content__description__bubbles">
+                        <div class="quotes__content__description__bubbles__item select"></div>
+                        <div class="quotes__content__description__bubbles__item"></div>
+                        <div class="quotes__content__description__bubbles__item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__item">
+                <div class="advantages__item__image yellow"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                <p class="advantages__item__name">Fast Servers</p>
+                <p class="advantages__item__name__text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item__image blue"><i class="fa fa-cloud" aria-hidden="true"></i>
+                </div>
+                <p class="advantages__item__name">Fast Servers</p>
+                <p class="advantages__item__name__text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item__image grey"><i class="fa fa-arrows" aria-hidden="true"></i>
+                </div>
+                <p class="advantages__item__name">Fast Servers</p>
+                <p class="advantages__item__name__text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item__image red"><i class="fa fa-comments" aria-hidden="true"></i>
+                </div>
+                <p class="advantages__item__name">Fast Servers</p>
+                <p class="advantages__item__name__text">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a href="#home">
+                    <img class="navigation__logo__image" src="images/logo_grey.png" alt="Site Logo">
+                </a>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">Home</li>
+                <li class="navigation__list__item">Domain</li>
+                <li class="navigation__list__item">Hosting</li>
+                <li class="navigation__list__item">Clients</li>
+                <li class="navigation__list__item">Blog</li>
+                <li class="navigation__list__item">Support</li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
+<script src="main.js"></script>
 
 </html>

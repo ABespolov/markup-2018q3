@@ -18,9 +18,11 @@ $offset_md_one_side: ($offset_md / 2);
 $offset_sm_one_side: ($offset_sm / 2);
 $offset_xs_one_side: ($offset_xs / 2);
 $fields: 30px;
-@mixin wrapper-full($noFields: false) {
+@mixin wrapper-full($noFields: false, $noMargin: false) {
     max-width: $break_xlg;
-    margin: 0 auto;
+    @if $noMargin==false {
+        margin: 0 auto;
+    }
     @if $noFields==false {
         padding-left: $fields;
         padding-right: $fields;
@@ -37,15 +39,17 @@ $fields: 30px;
     #{$type}-right: $offset_one_side;
 }
 
-@mixin wrapper($noFields: false) {
-    @include wrapper-full($noFields);
+@mixin wrapper($noFields: false, $noMargin: false) {
+    @include wrapper-full($noFields, $noMargin);
     max-width: 1200px;
 }
 
-@mixin row-flex() {
+@mixin row-flex($noWrapp: false) {
     display: flex;
-    flex-wrap: wrap;
-    @include row-offsets();
+    @if $noWrapp==false {
+        flex-wrap: wrap;
+    }
+    //@include row-offsets();
 }
 
 @mixin row-float() {
