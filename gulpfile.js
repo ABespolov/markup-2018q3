@@ -74,7 +74,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     gulp.src(['app/**/*.js'])
         .pipe(sourcemaps.init())
-        .pipe(concat('main.js'))
+        .pipe(concat('main-min.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dev'))
         .pipe(browserSync.reload({
@@ -159,8 +159,8 @@ gulp.task('production', function() {
         .pipe(cleanCSS({ level: 2 }))
         .pipe(gulp.dest('dist'));
 
-    gulp.src(['dev/main.js'])
-        .pipe(minify())
+    gulp.src(['app/main.js'])
+        .pipe(minify({ noSource: true }))
         .pipe(gulp.dest('dist'));
 
     gulp.src(['dev/images/**/*'])

@@ -299,6 +299,7 @@ p {
          margin: 0 1rem .2rem .2rem;
 
          color: #D9D9D9;
+         outline: none;
 
          font-size: 1rem;
          font-weight: 400;
@@ -310,8 +311,12 @@ p {
          border: #D9D9D9 1px solid;
          border-top: none;
          border-bottom: none;
+         outline: none;
 
          line-height: 2rem;
+
+         @include xs(width,
+         77%);
       }
       &__select-zone {
          width: 6.5rem;
@@ -696,10 +701,10 @@ p {
 
                   max-width: 7.5rem;
                   margin: 0 auto;
+
+                  justify-content: space-around;
                   a {
                      display: inline-block;
-
-                     width: 33.33%;
 
                      text-align: center;
 
@@ -718,7 +723,7 @@ p {
 .quotes {
    height: 11.875rem;
 
-   background: url("images/packages_background.png");
+   background: url("images/quotes_background.png");
 
    @include sm(height,
    inherit);
@@ -841,13 +846,15 @@ p {
 .advantages {
    max-width: 1300px;
    margin: 0 auto;
-   padding: 6.2rem 0 6rem 0;
-   padding-right: 30px;
-   padding-left: 30px;
+   padding: 0rem 30px 6rem 30px;
 
    @include row-flex();
    &__item {
+      margin-top: 6.2rem;
+
       @include size(3);
+      @include size-md(6);
+      @include size-xs(12);
       &__image {
          display: flex;
 
@@ -884,9 +891,13 @@ p {
 }
 
 .footer {
-   padding-bottom: 5rem;
+   padding-bottom: 1.5rem;
 
    background: #2A2A2A;
+
+   @include sm(padding-top,
+   .5rem);
+   @include wrapper-full();
    .navigation {
       border-color: #4A4A4A;
       &__list {
@@ -897,6 +908,9 @@ p {
 
             font-size: .813rem;
             font-weight: 600;
+
+            @include sm(padding,
+            .5rem 0);
             &::after {
                display: none;
             }
@@ -907,6 +921,9 @@ p {
          &__item {
             &:not(:last-child) {
                margin-right: 2.9rem;
+
+               @include sm(margin-right,
+               0);
             }
          }
       }
@@ -914,23 +931,32 @@ p {
    &__info {
       padding-top: 3rem;
 
+      @include lg(flex-direction,
+      column);
       @include row-flex();
       @include wrapper();
       &__about {
-         @include size(4);
          &:after {
+            position: relative;
+            top: -9rem;
+            left: 23.5rem;
+
             display: block;
 
             width: 1px;
-            height: 10rem;
+            height: 9.5rem;
+            margin-bottom: -9rem;
 
             content: "";
 
             background: #686868;
+
+            @include lg(display,
+            none);
          }
          &__text    ,&__designBy {
             max-width: 19rem;
-            margin: .2rem auto .7rem 0;
+            margin: .2rem auto .7rem auto;
 
             text-align: left;
 
@@ -939,52 +965,110 @@ p {
             font-size: .938rem;
             font-weight: 400;
             line-height: 1.625rem;
+
+            @include lg(text-align,
+            center);
          }
-         &__designBy {
+         &__designBy span {
+            font-weight: 700;
          }
       }
       &__links {
          display: flex;
 
-         max-width: 15rem;
-         margin: 0 auto;
+         width: 51.6%;
 
-         @include size(4);
+         @include lg(width,
+         100%);
+         @include lg(margin,
+         3rem auto);
          justify-content: center;
          &:after {
+            position: relative;
+            top: -.9rem;
+            left: 5.2rem;
+
             display: block;
 
             width: 1px;
-            height: 10rem;
+            height: 9.5rem;
 
             content: "";
 
             background: #686868;
+
+            @include lg(display,
+            none);
          }
          &__list {
             list-style: none;
             &__item {
+               min-width: 8rem;
+               margin-left: 3.6rem;
+
                color: #686868;
 
                font-size: .938rem;
                font-weight: 400;
                line-height: 1.815rem;
+               .hover-style {
+                  display: none;
+               }
+               &:hover {
+                  color: #FFF;
+                  .hover-style {
+                     display: inline;
+                  }
+               }
                &:before {
+                  float: left;
+
+                  margin-right: .55rem;
+
                   content: "\f105";
 
                   font-family: "FontAwesome";
                   font-size: .875rem;
                }
+               &:after {
+                  content: "";
+               }
             }
          }
       }
       &__contacts {
+         position: relative;
+         left: 2.5rem;
+
+         padding-top: .4rem;
+
          color: #686868;
 
          font-size: .938rem;
          font-weight: 400;
 
-         @include size(4);
+         @include lg(left,
+         0);
+         @include lg(margin,
+         0 auto);
+         &__phone {
+            padding-left: .7rem;
+         }
+         &__email {
+            display: inline-block;
+
+            margin: .8rem 0 0 .5rem;
+         }
+         &__text {
+            margin: .7rem auto;
+
+            text-align: left;
+
+            color: #686868;
+
+            font-size: .938rem;
+            font-weight: 400;
+         }
       }
    }
 }
